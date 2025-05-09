@@ -47,7 +47,7 @@ body {
 
 /*배경*/
 #wrap #visual {
-  background: linear-gradient(-30deg, #f9e697, #ffc4a9);
+  background-color: #f9e697;
 }
 
 #wrap #con1 {
@@ -66,8 +66,6 @@ body {
   background-color: #f9e697;
 }
 
-/*visual*/
-
 /*header*/
 #header {
   width: 100%;
@@ -80,7 +78,7 @@ body {
   justify-content: space-between;
   text-align: center;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
 }
 
 #header.in {
@@ -134,16 +132,116 @@ body {
   transform: translateY(-100%);
 }
 
-/*visual_wrap*/
 
+/*first_wrap*/
+.first_wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.first_wrap .bg {
+  width: 100%;
+  height: 100%;
+  background-color: #a0d0f0;
+  position: absolute;
+  z-index: 9;
+
+}
+
+.first_wrap .bg_wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 8;
+}
+
+.first_wrap .bg_left {
+  width: 50%;
+  height: 100%;
+  background-color: #f9e697;
+  transform: translateX(0);
+  transition: 2.5s;
+}
+
+
+.first_wrap .bg_left.on {
+  transform: translateX(-100%);
+}
+
+.first_wrap .bg_right {
+  width: 50%;
+  height: 100%;
+  background-color: #f9e697;
+  transform: translateX(0);
+  transition: 2.5s;
+}
+
+.first_wrap .bg_right.on {
+  transform: translateX(100%);
+}
+
+.first_wrap .bg h2 {
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 250px;
+  text-align: center;
+  color: #f89a20;
+  font-family: "Mungyeong-Gamhong-Apple";
+}
+
+.first_wrap .lp_imge {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.lp_imge img {
+  width: 100%;
+  height: 50%;
+  animation: spin linear 2s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotateY(360deg);
+
+  }
+
+  100% {
+    transform: translateX(-100%);
+
+  }
+}
+
+/*visual*/
+
+/*visual_wrap*/
 .visual_wrap {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 0;
+
 }
 
-.visual_wrap.on {
+/*.visual_wrap.on {
   transform: translateY(-50px);
   opacity: 1;
 }
@@ -151,7 +249,7 @@ body {
 .visual_wrap {
   opacity: 0;
   transition: 1s;
-}
+}*/
 
 /*left*/
 
@@ -181,93 +279,62 @@ body {
   justify-content: center;
 }
 
-/*bar*/
 .vi_right h2 {
-  margin-top: 5rem;
-  font-size: 7rem;
-  color: #f89a20;
-  line-height: 150px;
-  font-family: "Mungyeong-Gamhong-Apple";
-}
-
-.vi_right .bar {
-  position: relative;
-}
-
-.vi_right .line {
-  background-color: #222;
-  width: 550px;
-  height: 2px;
-  margin-top: 5.5rem;
-}
-
-.vi_right .circle {
-  width: 15px;
-  height: 15px;
-  background-color: #222;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -8%;
-  left: 0%;
-  animation: trans 5s infinite linear;
-}
-
-@keyframes trans {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(550px);
-  }
-}
-
-/*year*/
-.vi_right .year {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-}
-
-/*play*/
-.vi_right .play {
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
-}
-
-.play i {
-  cursor: pointer;
-}
-
-/*txt*/
-.vi_right .vi_txt {
-  text-align: left;
-  font-size: 2rem;
   color: #a44e26;
-  font-weight: bold;
+  font-size: 2rem;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+/*keyWord*/
+.vi_right .keyWord {
   width: 80%;
-  flex-wrap: wrap;
+  height: 45%;
+  margin-top: 8rem;
+  border: 1px solid #ccc
+}
+
+.vi_right .keyWord>div {
+  width: 100%;
+  height: 100%;
+}
+
+.vi_right .keyWord img {
+  width: 100%;
+  height: 80%;
+}
+
+/*like*/
+.vi_right .like {
+  width: 80%;
+  height: 30%;
+  margin-top: 2rem;
+  border: 1px solid#ccc;
+}
+
+.like_wrap {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 3rem;
 }
 
-.vi_txt p:hover {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: #ff5a33;
-  cursor: pointer;
+.like_wrap img {
+  width: 150px;
+  height: 150px;
+}
+
+.like_wrap p {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 /*con1*/
 #con1 {
   width: 100%;
   height: 100%;
+
 }
 
 #con1 h2 {

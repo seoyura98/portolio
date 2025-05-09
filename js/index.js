@@ -1,5 +1,11 @@
 $(function () {
   /*visual*/
+  $(".lp_imge img").addClass("on");
+  $(".first_wrap .bg_left").addClass("on");
+  $(".first_wrap .bg_right").addClass("on");
+
+
+
   $(".visual_wrap").addClass("on");
   Splitting();
 
@@ -98,7 +104,7 @@ $(function () {
       $(".con1_left ").addClass("on");
       $(".con1_right ").addClass("on");
       $(".con1_lp").addClass("in");
-  
+
     }
 
     if (sc >= con1 && sc < con2) {
@@ -127,5 +133,5 @@ $(function () {
     });
   });
 
-  
+
 });
