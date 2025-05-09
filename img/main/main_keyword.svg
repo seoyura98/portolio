@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 345.79 175.53">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 36.24px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        font-family: Cafe24Ohsquare, 'Cafe24 Ohsquare';
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: #231f20;
+      }
+
+      .cls-2 {
+        font-size: 31.78px;
+      }
+
+      .cls-3 {
+        font-size: 24.16px;
+      }
+
+      .cls-4 {
+        font-size: 23.4px;
+      }
+
+      .cls-5 {
+        font-size: 28.94px;
+      }
+
+      .cls-6 {
+        font-size: 22.78px;
+      }
+
+      .cls-7 {
+        font-size: 60.39px;
+      }
+
+      .cls-8 {
+        font-size: 34.76px;
+      }
+
+      .cls-9 {
+        font-size: 30.2px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(0 119.35) scale(1.13 1)"><tspan x="0" y="0">성실함</tspan></text>
+  <text class="cls-9" transform="translate(29.53 164.51) scale(.99 1)"><tspan x="0" y="0">긍정적인 마인드</tspan></text>
+  <text class="cls-5" transform="translate(179 71.19) rotate(-90) scale(1.01 1)"><tspan x="0" y="0">열정</tspan></text>
+  <text class="cls-7" transform="translate(117.54 121.69) scale(.68 1)"><tspan x="0" y="0">적극적인 태도</tspan></text>
+  <text class="cls-3" transform="translate(249.9 158.37) scale(.99 1)"><tspan x="0" y="0">도전정신</tspan></text>
+  <text class="cls-4" transform="translate(207.65 21.13) scale(1.04 1)"><tspan x="0" y="0">메모하는 습관</tspan></text>
+  <text class="cls-8" transform="translate(42.64 79) scale(1.09 1)"><tspan x="0" y="0">끈기</tspan></text>
+  <text class="cls-6" transform="translate(30.21 40.02) scale(1.09 1)"><tspan x="0" y="0">리더쉽</tspan></text>
+  <text class="cls-5" transform="translate(141.7 72.34) rotate(-90) scale(1.01 1)"><tspan x="0" y="0">성장</tspan></text>
+  <text class="cls-2" transform="translate(196.05 58.86) scale(.99 1)"><tspan x="0" y="0">준비된 인재</tspan></text>
+</svg>

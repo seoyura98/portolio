@@ -145,8 +145,12 @@ body {
   height: 100%;
   background-color: #a0d0f0;
   position: absolute;
-  z-index: 9;
+  z-index: 10;
+  transition: 2s ease-in-out;
+}
 
+.first_wrap .bg.on {
+  opacity: 0;
 }
 
 .first_wrap .bg_wrap {
@@ -154,15 +158,16 @@ body {
   height: 100%;
   position: absolute;
   display: flex;
-  z-index: 8;
+
 }
+
 
 .first_wrap .bg_left {
   width: 50%;
   height: 100%;
   background-color: #f9e697;
   transform: translateX(0);
-  transition: 2.5s;
+  transition: 0.5s;
 }
 
 
@@ -175,7 +180,7 @@ body {
   height: 100%;
   background-color: #f9e697;
   transform: translateX(0);
-  transition: 2.5s;
+  transition: 0.5s;
 }
 
 .first_wrap .bg_right.on {
@@ -194,6 +199,72 @@ body {
   font-family: "Mungyeong-Gamhong-Apple";
 }
 
+/*note_imge*/
+.first_wrap .bg .note_imge {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+}
+
+.first_wrap .bg .note_imge img {
+  width: 60px;
+  height: 60px;
+}
+
+.first_wrap .bg .note {
+  position: absolute;
+  left: 35%;
+  top: 21%;
+  transform: translateY(0);
+  transition: 1.2s ease-in-out;
+}
+
+.first_wrap .bg .note.on {
+  transform: translateY(-80px);
+  opacity: 0;
+}
+
+.first_wrap .bg .note01 {
+  position: absolute;
+  left: 25%;
+  bottom: 34%;
+  transform: translateY(0);
+  transition: 1.2s ease-in-out;
+}
+
+.first_wrap .bg .note01.on {
+  transform: translateY(-80px);
+  opacity: 0;
+}
+
+.first_wrap .bg .note02 {
+  position: absolute;
+  right: 38%;
+  bottom: 34%;
+  transform: translateY(0);
+  transition: 1.2s ease-in-out;
+}
+
+.first_wrap .bg .note02.on {
+  transform: translateY(-80px);
+  opacity: 0;
+}
+
+.first_wrap .bg .note03 {
+  position: absolute;
+  right: 12%;
+  top: 23%;
+  transform: translateY(0);
+  transition: 1s ease-in-out;
+}
+
+.first_wrap .bg .note03.on {
+  transform: translateY(-90px);
+  opacity: 0;
+}
+
+
 .first_wrap .lp_imge {
   position: absolute;
   z-index: 10;
@@ -208,7 +279,7 @@ body {
 .lp_imge img {
   width: 100%;
   height: 50%;
-  animation: spin linear 2s forwards;
+  animation: spin linear 1s forwards;
 }
 
 @keyframes spin {
@@ -241,15 +312,15 @@ body {
 
 }
 
-/*.visual_wrap.on {
+.visual_wrap.on {
   transform: translateY(-50px);
   opacity: 1;
 }
 
 .visual_wrap {
   opacity: 0;
-  transition: 1s;
-}*/
+  transition: 2s ease-in-out;
+}
 
 /*left*/
 
@@ -291,7 +362,10 @@ body {
   width: 80%;
   height: 45%;
   margin-top: 8rem;
-  border: 1px solid #ccc
+  border: 1px solid #ccc;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 74% 86%, 75% 98%, 50% 87%, 0 87%);
+
+
 }
 
 .vi_right .keyWord>div {

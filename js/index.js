@@ -3,7 +3,11 @@ $(function () {
   $(".lp_imge img").addClass("on");
   $(".first_wrap .bg_left").addClass("on");
   $(".first_wrap .bg_right").addClass("on");
-
+  $(".first_wrap .bg .note").addClass("on");
+  $(".first_wrap .bg .note01").addClass("on");
+  $(".first_wrap .bg .note02").addClass("on");
+  $(".first_wrap .bg .note03").addClass("on");
+  $(".first_wrap .bg").addClass("on");
 
 
   $(".visual_wrap").addClass("on");
