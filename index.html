@@ -5,16 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--js-->
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/splitting.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-jquery-transform/2.0.0/transform.min.js"
     integrity="sha512-vOc3jz0QulHRiyMXfp676lHxeSuzUhfuw//VUX12odAmlUbnKiXH4GQxBRqwKhF3Mkswqr5ILY9MtEM4ZwcS2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -173,69 +179,76 @@
 
 
       <div id="con2">
-        <h2>Design</h2>
-        <ul>
-          <li>
-            <p><i class="fa-solid fa-caret-right"></i> 댕댕이 유치원</p>
-            <div>
-              <img src="img/design/댕댕이유치원.jpg" alt="댕댕이유치원" />
-              <p>자세히 보기</p>
-            </div>
-          </li>
-          <li>
-            <p><i class="fa-solid fa-caret-right"></i> 8.15 광복절</p>
-            <div>
-              <img src="img/design/광복절.jpg" alt="광복절" />
-              <p>자세히 보기</p>
-            </div>
-          </li>
-          <li>
-            <p><i class="fa-solid fa-caret-right"></i> SUMMER</p>
-            <div>
-              <img src="img/design/summer.jpg" alt="summer" />
-              <p>자세히 보기</p>
-            </div>
-          </li>
-          <li>
-            <p><i class="fa-solid fa-caret-right"></i> 디자인명</p>
-            <div>
-              <img src="img/design/summer.jpg" alt="댕댕이유치원" />
-              <p>자세히 보기</p>
-            </div>
-          </li>
-          <li>
-            <p><i class="fa-solid fa-caret-right"></i> 디자인명</p>
-            <div>
-              <img src="img/design/댕댕이유치원.jpg" alt="댕댕이유치원" />
-              <p>자세히 보기</p>
-            </div>
-          </li>
-          <li>
-            <p><i class="fa-solid fa-caret-right"></i> 디자인명</p>
-            <div>
-              <img src="img/design/광복절.jpg" alt="댕댕이유치원" />
-              <p>자세히 보기</p>
-            </div>
-          </li>
-        </ul>
-        <div id="modalBox">
-          <div id="modalContent">
-            <div id="modal_wrap">
-              <div id="xmark">
-                <i class="fa-solid fa-xmark"></i>
+        <div class="swiper mySwiper">
+          <h2>Design</h2>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p><i class="fa-solid fa-caret-right"></i> 댕댕이 유치원</p>
+              <div>
+                <img src="img/design/puppy.jpg" alt="댕댕이유치원" />
+                <p>자세히 보기</p>
               </div>
-              <div id="imge">
-                <img src="img/댕댕이유치원.jpg" alt="댕댕이 유치원" />
-                <img src="img/광복절.jpg" alt="광복절" />
-                <img src="img/summer.jpg" alt="summer" />
-                <img src="img/댕댕이유치원.jpg" alt="댕댕이 유치원" />
-                <img src="img/댕댕이유치원.jpg" alt="댕댕이 유치원" />
-                <img src="img/댕댕이유치원.jpg" alt="댕댕이 유치원" />
+            </div>
+            <div class="swiper-slide">
+              <p><i class="fa-solid fa-caret-right"></i> 8.15 광복절</p>
+              <div>
+                <img src="img/design/815.jpg" alt="광복절" />
+                <p>자세히 보기</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p><i class="fa-solid fa-caret-right"></i> SUMMER</p>
+              <div>
+                <img src="img/design/summer.jpg" alt="summer" />
+                <p>자세히 보기</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p><i class="fa-solid fa-caret-right"></i> 댕댕이 유치원</p>
+              <div>
+                <img src="img/design/puppy.jpg" alt="댕댕이유치원" />
+                <p>자세히 보기</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p><i class="fa-solid fa-caret-right"></i> 8.15 광복절</p>
+              <div>
+                <img src="img/design/815.jpg" alt="광복절" />
+                <p>자세히 보기</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p><i class="fa-solid fa-caret-right"></i> SUMMER</p>
+              <div>
+                <img src="img/design/summer.jpg" alt="summer" />
+                <p>자세히 보기</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div id="modalBox">
+            <div id="modalContent">
+              <div id="modal_wrap">
+                <div id="xmark">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div id="imge">
+                  <img src="img/design/puppy.jpg" alt="댕댕이 유치원" />
+                  <img src="img/design/815.jpg" alt="광복절" />
+                  <img src="img/design/summer.jpg" alt="summer" />
+                  <img src="img/design/summer.jpg" alt="댕댕이 유치원" />
+                  <img src="img/design/puppy.jpg" alt="댕댕이 유치원" />
+                  <img src="img/design/815.jpg" alt="댕댕이 유치원" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
       <div id="con3">
         <h2>Project</h2>
         <div class="con3_wrap">
@@ -246,7 +259,7 @@
               <div class="btn">
                 <div><a href="#">기획서</a></div>
                 <div>
-                  <a href="https://seoyura98.github.io/jiyugaoka/" target="_blank">More view</a>
+                  <a href="https://seoyura98.github.io/jiyugaoka/">More view</a>
                 </div>
               </div>
             </li>
@@ -256,7 +269,7 @@
               <div class="btn">
                 <div><a href="#">기획서</a></div>
                 <div>
-                  <a href="https://seoyura98.github.io/storytaco/" target="_blank">More view</a>
+                  <a href="https://seoyura98.github.io/storytaco/">More view</a>
                 </div>
               </div>
             </li>

@@ -568,7 +568,15 @@ body {
 #con2 {
   width: 100%;
   height: 100%;
+}
+
+#con2 .swiper {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
+  box-sizing: border-box;
 }
 
 #con2 h2 {
@@ -577,92 +585,36 @@ body {
   width: 80%;
   margin: 0px auto;
   padding: 2rem 0rem;
-}
-
-/*con02 ul*/
-#con2 ul {
-  width: 100%;
-  gap: 1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1rem 0rem 3rem;
   box-sizing: border-box;
 }
 
-#con2 ul>li {
-  width: calc(80% / 3 - 1rem);
-  height: 100%;
-  transform: translateY(100px);
-  transition: 2s ease-in-out;
-  opacity: 0;
-}
-
-#con2 ul>li img {
+#con2 .swiper-wrapper {
+  display: flex;
   width: 100%;
-  height: 300px;
-  aspect-ratio: 1 / 1;
-}
-
-#con2 li>div {
-  text-align: center;
-  position: relative;
-  cursor: pointer;
-}
-
-#con2 li>div>p {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-80px);
   opacity: 0;
-  color: #fff;
+  transition: 1.5s ease-in-out;
 }
 
-#con2.active li {
+#con2 .swiper-wrapper.on {
   transform: translateY(0);
   opacity: 1;
 }
 
-#con2 li:nth-child(1) {
-  transition-delay: 0s;
+#con2 .swiper-wrapper .swiper-slide {
+  /* background-position: center;
+  background-size: cover; */
+  width: 500px;
+  height: 530px;
+  flex-shrink: 0;
 }
 
-#con2 li:nth-child(2) {
-  transition-delay: 0.4s;
-}
-
-#con2 li:nth-child(3) {
-  transition-delay: 0.8s;
-}
-
-#con2 li:nth-child(4) {
-  transition-delay: 1.2s;
-}
-
-#con2 li:nth-child(5) {
-  transition-delay: 1.6s;
-}
-
-#con2 li:nth-child(6) {
-  transition-delay: 2s;
-}
-
-#con2 li:hover img {
-  filter: brightness(50%);
-}
-
-#con2 li:hover div p {
-  opacity: 1;
-}
-
-#con2 p {
+.swiper-slide p {
   font-size: 1.1rem;
   color: #a44e26;
-  margin-bottom: 1rem;
 }
 
-#con2 p>i {
+.swiper-slide p i {
   border: 1px solid #a44e26;
   font-size: 1.1rem;
   border-radius: 50%;
@@ -672,7 +624,54 @@ body {
   text-align: center;
 }
 
-/*con2 모달창*/
+.swiper-slide>div {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.swiper-slide div>p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 500px;
+  height: 500px;
+  /* object-fit: cover; */
+}
+
+/*pagination*/
+.swiper-pagination {
+  left: 0% !important;
+  bottom: 50px !important;
+  position: fixed;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f89a20;
+}
+
+/*hover*/
+#con2 .swiper-wrapper .swiper-slide:hover img {
+  filter: brightness(50%);
+}
+
+#con2 .swiper-wrapper .swiper-slide:hover div p {
+  opacity: 1;
+}
+
+/*모달창*/
 #modalBox {
   width: 100%;
   height: 100vh;
@@ -691,7 +690,7 @@ body {
 /*modalContent*/
 #modalContent {
   width: 100%;
-  padding-top: 5rem;
+  height: 100%;
 }
 
 #modal_wrap {
@@ -701,11 +700,12 @@ body {
 
 #xmark {
   position: absolute;
-  right: 50px;
-  top: 30px;
+  right: 30%;
+  top: 10%;
   font-size: 3rem;
   cursor: pointer;
   color: #fff;
+  z-index: 10;
 }
 
 #modalContent #imge {
@@ -718,6 +718,8 @@ body {
 }
 
 #imge img {
+  padding-top: 80px;
+  box-sizing: border-box;
   display: none;
   position: absolute;
   left: 50%;

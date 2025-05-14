@@ -14,8 +14,26 @@ $(function () {
   Splitting();
 
   /*con2*/
-  $("#con2 ul > li > div").on("click", function () {
-    let i = $(this).parent().index();
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  $("#con2 .swiper-slide > div").on("click", function () {
+    let i = $(this).closest(".swiper-slide").index();
 
     $("#imge img").removeClass("active");
     $("#imge img").eq(i).addClass("active");
@@ -112,7 +130,7 @@ $(function () {
     }
 
     if (sc >= con1 && sc < con2) {
-      $("#con2").addClass("active");
+      $("#con2 .swiper-wrapper").addClass("on");
 
     }
     if (sc >= con2 && sc < con3) {
